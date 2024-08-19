@@ -1,0 +1,13 @@
+.facebook-icon-container {
+    background-color: #fff; 
+    display: inline-block;
+    padding: 5px; 
+    width: 25px; 
+    height: 25px; 
+  }
+  
+  .facebook-icon {
+    display: block;
+    transform: translateY(-25px) translateX(-4px);
+  }
+  

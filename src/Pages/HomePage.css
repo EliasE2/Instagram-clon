@@ -1,0 +1,122 @@
+/* General */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%; /* Asegura que el cuerpo ocupe toda la altura */
+  overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+.homepage {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  width: 100vw; /* Asegura que cubra todo el ancho de la ventana */
+  height: 100vh; /* Asegura que cubra toda la altura de la ventana */
+  display: flex;
+  flex-direction: row; /* Barra lateral y contenido en fila */
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #000;
+  position: fixed; /* Fija la barra de navegación */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden; /* Evita el scroll en la barra lateral */
+}
+
+.content {
+  margin-left: 200px; /* Deja espacio para la barra de navegación */
+  padding: 20px;
+  width: calc(100% - 200px); /* Ajusta el ancho para el espacio dejado por la barra lateral */
+  height: 100vh; /* Asegura que el contenedor tenga altura completa de la ventana */
+  overflow-y: auto; /* Permite el scroll vertical en el contenido */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Feed Post Styles */
+.feed-post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%; /* Asegura que el contenedor use todo el ancho disponible */
+}
+
+.feed-post {
+  width: 600px; /* Ajusta este tamaño según prefieras */
+  max-width: 100%; /* Asegura que el contenedor no exceda el ancho del viewport */
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.feed-post-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: bold;
+  color: #262626;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ed4956;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.feed-post-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.feed-post-image {
+  width: 100%;
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  max-height: 600px; /* Ajusta la altura máxima */
+  object-fit: contain; /* Mantiene las proporciones de la imagen */
+}
+
+.feed-post-icons {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  font-size: 24px;
+  color: #262626;
+}
+
+.feed-post-title {
+  padding: 10px;
+  font-size: 14px;
+  color: #262626;
+}
+
+.feed-post-title .username {
+  margin-right: 5px;
+  font-weight: bold;
+}

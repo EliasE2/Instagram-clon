@@ -1,0 +1,61 @@
+.crear {
+    position: absolute; /* O relative, fixed, sticky según el caso */
+    left: 600px; /* Ajusta la posición horizontal */
+    top: 200px; /* Ajusta la posición vertical */
+    width: 500px;
+    height: 500px;
+    background-color: #262626;
+    border: 1px solid;
+}
+
+
+/* Estilo para el título */
+.titulo {
+    color: white;
+    width: 70px;
+    height: 40px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    transform: translateX(110px) translateY(20px);
+    z-index: 11; /* Asegura que el título esté sobre otros elementos dentro de .crear */
+
+}
+
+/* Estilo para el botón de carga */
+.upload {
+    width: 70px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    transform: translateX(230px) translateY(-115px);
+    z-index: 11; /* Asegura que el botón de carga esté sobre otros elementos dentro de .crear */
+    color: #fff;
+}
+
+/* Estilo para el botón de selección de archivos */
+.seleccionar-archivos {
+    color: white;
+    width: 170px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    transform: translateX(180px) translateY(200px);
+    z-index: 11; /* Asegura que el botón de selección de archivos esté sobre otros elementos dentro de .crear */
+}
+
+.new-publication {
+        position: relative; /* O absolute, fixed, sticky según el caso */
+        left: 150px; /* Mueve el span 20px hacia la derecha */
+        top: 25px;
+    
+}
+
+.img-logo {
+    position: relative;
+    bottom: 110px;
+    left: 140px;
+}

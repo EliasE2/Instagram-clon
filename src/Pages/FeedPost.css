@@ -1,0 +1,131 @@
+.feed-post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.feed-post {
+  width: 600px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.feed-post-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: bold;
+  color: #262626;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ed4956;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.feed-post-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.feed-post-image {
+  width: 100%;
+  max-width: 600px;
+  max-height: 600px;
+  object-fit: contain;
+}
+
+.feed-post-icons {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  font-size: 24px;
+  color: #262626;
+}
+
+.feed-post-title {
+  padding: 10px;
+  font-size: 14px;
+  color: #262626;
+}
+
+.feed-post-title .username {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.feed-post-comments {
+  padding: 10px;
+  border-top: 1px solid #dbdbdb;
+}
+
+.comment {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-text {
+  color: #262626;
+  flex: 1;
+}
+
+.comment-form {
+  display: flex;
+  gap: 10px;
+}
+
+.comment-form input {
+  flex: 1;
+  padding: 5px;
+}
+
+.comment-form button {
+  padding: 5px 10px;
+}
+
+.delete-comment-btn {
+  background: none;
+  border: none;
+  color: #ed4956;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Estilo para el ícono de "Me Gusta" */
+.like-icon {
+  color: #262626; /* Color por defecto (gris oscuro) */
+  cursor: pointer;
+  font-size: 24px; /* Ajusta el tamaño si es necesario */
+}
+
+/* Estilo cuando el ícono está en estado "Me Gusta" */
+.like-icon.liked {
+  color: #ed4956; /* Color rojo cuando está "Me Gusta" */
+}
